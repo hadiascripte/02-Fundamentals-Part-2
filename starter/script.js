@@ -53,11 +53,13 @@ console.log(age1, age2);
 
 */
 
+/*
 //Arrow function
 
 const calcAge3 = (birthYear) => 2037 - birthYear;
 const age3 = calcAge3(1991);
 console.log(age3);
+
 
 const yearsUntilRetirement = (birthYear,firstName) => {
       const age = 2037 - birthYear;
@@ -67,3 +69,18 @@ const yearsUntilRetirement = (birthYear,firstName) => {
 yearsUntilRetirement(1991);
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1980, 'Bob'));
+*/
+
+//function
+
+function cutFruitPieces(fruit) {
+    return fruit * 4;
+}
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+    const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
+    return juice; 
+}
+fruitProcessor(2, 3);
+console.log(fruitProcessor(2, 3));
