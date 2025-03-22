@@ -71,7 +71,6 @@ console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1980, 'Bob'));
 */
 
-/*
 //function
 
 function cutFruitPieces(fruit) {
@@ -81,19 +80,37 @@ function fruitProcessor(apples, oranges) {
     const applePieces = cutFruitPieces(apples);
     const orangePieces = cutFruitPieces(oranges);
     const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
-    return juice; 
+    return juice;
 }
 fruitProcessor(2, 3);
 console.log(fruitProcessor(2, 3));
-*/
+
+// -----------------------------------------------------------------------
+
 const calcAge = function (birthYear) {
     return 2037 - birthYear;
 };
+
+function ageDeRetraite(ageRet) {
+    return ageRet - 65;
+}
 const yearsUntilRetirement = function (birthYear, firstName) {
     const age = calcAge(birthYear);
     const retirement = 65 - age;
-    return retirement;
-    // return `${firstName} retires in ${retirement} years`;
+    const jaiEnfinTrouve = ageDeRetraite(age);
+
+    if (retirement > 0) {
+        return retirement;
+    } else if (retirement < 0) {
+        const ageDeRetraite = `${firstName} est déjà à la retraite depuis ${jaiEnfinTrouve} ans`;
+        return ageDeRetraite;
+    } else {
+        return " Vos données sont incorrectes";
+    }
 };
+
+// return `${firstName} retires in ${retirement} years`;
+
 yearsUntilRetirement(1991, "Jonas");
 console.log(yearsUntilRetirement(1991, "Jonas"));
+console.log(yearsUntilRetirement(1950, "Mike"));
