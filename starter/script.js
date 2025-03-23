@@ -71,6 +71,7 @@ console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1980, 'Bob'));
 */
 
+/*
 //function
 
 function cutFruitPieces(fruit) {
@@ -84,28 +85,35 @@ function fruitProcessor(apples, oranges) {
 }
 fruitProcessor(2, 3);
 console.log(fruitProcessor(2, 3));
+// 
 
-// -----------------------------------------------------------------------
+*/
 
+// ----------------------------------------------------------------------
+
+/*
+// function expression
 const calcAge = function (birthYear) {
     return 2037 - birthYear;
 };
-
-function ageDeRetraite(ageRet) {
+// function declaration
+function retirementAge (ageRet) {
     return ageRet - 65;
 }
 const yearsUntilRetirement = function (birthYear, firstName) {
     const age = calcAge(birthYear);
     const retirement = 65 - age;
-    const jaiEnfinTrouve = ageDeRetraite(age);
+    const jaiEnfinTrouve = retirementAge(age);
+
 
     if (retirement > 0) {
         return retirement;
+        
     } else if (retirement < 0) {
-        const ageDeRetraite = `${firstName} est déjà à la retraite depuis ${jaiEnfinTrouve} ans`;
-        return ageDeRetraite;
+        const retirementAge = `${firstName} est retraité(e) depuis ${jaiEnfinTrouve} ans`;
+        return retirementAge;
     } else {
-        return " Vos données sont incorrectes";
+        return "Vos données sont incorrectes";
     }
 };
 
@@ -114,3 +122,29 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 yearsUntilRetirement(1991, "Jonas");
 console.log(yearsUntilRetirement(1991, "Jonas"));
 console.log(yearsUntilRetirement(1950, "Mike"));
+*/
+
+// Challenge #1
+
+// Expression de fonction
+// const calcAverage = function (score1, score2, score3) {
+//     const averageScore = (score1 + score2 + score3) / 3;
+//     return averageScore;
+// };
+
+// fonction fléchée
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+const scoreDolphins = calcAverage (85, 54, 41);
+const scoreKoalas = calcAverage(23, 34, 27);
+
+ const checkWinner = function(scoreDolphins, scoreKoalas) {
+    if (scoreDolphins >=scoreKoalas * 2) {
+        console.log(`Dolphins win (${scoreDolphins} vs ${scoreKoalas})`);
+    } else if (scoreKoalas >=scoreDolphins * 2) {
+        console.log(`Koalas win (${scoreKoalas} vs ${scoreDolphins})`);
+    } else {
+        console.log("No team wins ...");
+    }
+}
+checkWinner(scoreDolphins, scoreKoalas);
+checkWinner(576, 111);
