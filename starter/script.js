@@ -131,8 +131,10 @@ console.log(yearsUntilRetirement(1950, "Mike"));
 //     const averageScore = (score1 + score2 + score3) / 3;
 //     return averageScore;
 // };
+//
 
 // fonction fléchée
+/*
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 const scoreDolphins = calcAverage (85, 54, 41);
 const scoreKoalas = calcAverage(23, 34, 27);
@@ -148,3 +150,58 @@ const scoreKoalas = calcAverage(23, 34, 27);
 }
 checkWinner(scoreDolphins, scoreKoalas);
 checkWinner(576, 111);
+// *
+*/
+
+// Arrays
+/*
+const friends = ["Mickeal", "Steven", "Peter"];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
+console.log(years);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+// Pour obtenir le nombre d'éléments qui est contenu dans le tableau
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jay";
+console.log(friends);
+
+// On nepeut pas modifire tout un tableau
+// friends = ["Jay", "Mary"]
+
+const firstName = "Hadia";
+
+const hadia = [firstName, "Sacko", 2025 - 1987, "Développeuse FullStack", friends];
+console.log(hadia);
+console.log(hadia.length);
+*/
+
+// Exercise
+
+const calcAge = function (birthYear) {
+    return 2037 - birthYear;
+};
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+calcAge(years);
+console.log(calcAge(years));
+/*
+// Mon exercices
+console.log(years[years.length-1]-10);
+console.log(calcAge(years[2]));
+*/
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages =[ calcAge(years[0]),calcAge(years[1]),calcAge(years[years.length - 1])]
+console.log(ages)
