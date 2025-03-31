@@ -184,6 +184,7 @@ console.log(hadia.length);
 
 // Exercise
 
+/*
 const calcAge = function (birthYear) {
     return 2037 - birthYear;
 };
@@ -198,6 +199,7 @@ console.log(years[years.length-1]-10);
 console.log(calcAge(years[2]));
 */
 
+/*
 const age1 = calcAge(years[0]);
 const age2 = calcAge(years[1]);
 const age3 = calcAge(years[years.length - 1]);
@@ -205,3 +207,68 @@ console.log(age1, age2, age3);
 
 const ages =[ calcAge(years[0]),calcAge(years[1]),calcAge(years[years.length - 1])]
 console.log(ages)
+*/
+
+/*
+// Methods
+
+// PUSH
+const friends = ["Mickeal", "Steven", "Peter"];
+// friends.push("jay");
+console.log(friends);
+
+// Nous créons une variable avec la fonction push pour pourvoir stocker les données ou la valeur retrounées
+
+const newLength = friends.push("Jay");
+console.log(newLength);
+
+//  UNSHIFT
+
+friends.unshift("John");
+console.log(friends);
+
+//POP (Renvoie l'élément supprimé)
+
+friends.pop();
+console.log(friends);
+
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+// friends.shift();
+console.log(friends);
+
+const shifted = friends.shift();
+console.log(shifted);
+
+console.log(friends.indexOf("Steven"));
+
+console.log(friends.includes("Steven"));
+console.log(friends.includes("Mike"));
+
+if (friends.includes("Steven")) {
+    console.log("You have a friends called Steven");
+}
+
+*/
+
+const bill = 430;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(
+    `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`
+);
+
+const calcTip = function (bill) {
+    const tip2 = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2; 
+    return tip2;
+};
+calcTip(100);
+console.log(calcTip(100));
+
+const bills = [125, 555, 44];
+const tips = [calcTip(125), calcTip(555), calcTip(44)];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2]+ tips[2]];
+console.log(bills);
+console.log(tips);
+console.log(totals);
