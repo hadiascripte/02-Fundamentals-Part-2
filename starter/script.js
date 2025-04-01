@@ -275,6 +275,7 @@ console.log(tips);
 console.log(totals);
 */
 
+/*
 const jonasArray = [
     "Jonas",
     "Schmedtmann",
@@ -282,3 +283,70 @@ const jonasArray = [
     "Teacher",
     [("Micheal", "Peter", "Steven")],
 ];
+const jonas = {
+    firstName: "jonas",
+    lastName: "Schmedtmann",
+    age: 2037-1991,
+    job:"teacher",
+    friends: ["Micheal", "Peter", "Steven"],
+};
+console.log(jonas);  
+*/
+
+/*
+// DOT vs BRACKET NOTATION
+
+const jonas = {
+    firstName: "jonas",
+    lastName: "Schmedtmann",
+    age: 2037 - 1991,
+    job: "teacher",
+    friends: ["Micheal", "Peter", "Steven"],
+};
+console.log(jonas.lastName);
+console.log(jonas["lastName"]);
+
+const nameKey = "Name";
+console.log(jonas["first" + nameKey]);
+console.log(jonas["last" + nameKey]);
+
+// const interestedIn = prompt(
+//     "What do you want to know about Jonas? Choose betwenn firstName, lastName, age, job, and friends"
+// );
+
+// if (jonas[interestedIn]){
+//     console.log(jonas[interestedIn]);
+    
+// } else{
+//     console.log("Wrong request. Choose betwenn firstName, lastName, age, job, and friends ");
+    
+// }
+
+jonas.location= "Paris";
+jonas["twitter"]="@jonasschemdtmann";
+console.log(jonas);
+*/
+
+/*
+const jonas = {
+    firstName: "jonas",
+    lastName: "Schmedtmann",
+    age: 2037 - 1991,
+    job: "teacher",
+    friends: ["Micheal", "Peter", "Steven"],
+};
+
+console.log(
+    `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend called ${jonas.friends[0]}`
+);
+*/
+
+// FOR LOOP
+
+// console.log("Lifting weight repetition 1 ");
+
+// for (let rep = 1; rep <= 10; rep++) {
+//     // console.log(`Lifting weight repetition ${rep}`);
+// }
+
+
