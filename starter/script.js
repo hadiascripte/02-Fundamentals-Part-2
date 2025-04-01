@@ -253,6 +253,7 @@ if (friends.includes("Steven")) {
 
 */
 
+/*
 const bill = 430;
 const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 console.log(
@@ -272,3 +273,12 @@ const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2]+ tips[2]];
 console.log(bills);
 console.log(tips);
 console.log(totals);
+*/
+
+const jonasArray = [
+    "Jonas",
+    "Schmedtmann",
+    2037 - 1991,
+    "Teacher",
+    [("Micheal", "Peter", "Steven")],
+];
